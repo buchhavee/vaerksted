@@ -1,13 +1,21 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.6;
+  font-size: 1.4rem;
 }
+
+/** Styling af menu **/
 
 .navbar {
   position: relative;
@@ -67,7 +75,7 @@ body {
   cursor: pointer;
   padding: 10px;
   z-index: 1000;
-  display: block; /* Ensure it's always visible on mobile */
+  display: block;
 }
 
 .menu-icon {
@@ -172,6 +180,8 @@ body {
   font-size: 1rem;
   text-align: center;
 }
+
+/** Media querry til desktop view **/
 
 @media (min-width: 768px) {
   .navbar-content {
