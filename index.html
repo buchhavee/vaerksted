@@ -10,6 +10,17 @@
 
 <body>
     <header>
+        <div class="hero-container">
+            <div class="hero-image">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/1d956470-53f5-4c33-a33e-264099c2a106/nLzda3c7Xn.lottie"
+                    background="transparent" speed="1" style="width: 100px; height: 100px" loop autoplay
+                    class="scroll_lottie"></dotlottie-player>
+
+            </div>
+        </div>
+
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="navbar-content">
@@ -24,12 +35,12 @@
                         <a href="vaerkstedet.html" class="menu-item">Værkstedet</a>
                     </div>
                     <button class="menu-toggle" aria-label="Toggle menu">
-                        <div class="menu-icon">
+                        <span class="menu-icon">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -38,14 +49,13 @@
         <div class="mobile-menu">
             <div class="mobile-menu-container">
                 <div class="mobile-menu-header">
-                    <a href="/" class="logo-link">Vaerkstedet</a>
                     <button class="close-menu" aria-label="Close menu">
-                        <div class="menu-icon close-icon">
+                        <span class="menu-icon close-icon">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
+                        </span>
                     </button>
                 </div>
                 <nav class="mobile-nav">
@@ -57,7 +67,9 @@
                 </nav>
             </div>
         </div>
+
     </header>
+
 
     <script src="JS/menu.js"></script>
 </body>
